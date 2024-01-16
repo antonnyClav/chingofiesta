@@ -1,0 +1,36 @@
+<footer>
+    <div class="contenedor">
+       <div class="row">
+          <nav class="col-12 col-m-4">
+             <div class="tituloPie">Navegar</div>
+             <div class="menuPie">
+                <ul>
+                   <!-- <li><a href="#" [routerLink]="['/home/productos']" class="">Productos</a></li> -->
+                   <li><a href="#" [routerLink]="['/home/default']" (click)="SeleccionarMenu('default')" class="">Ofertas</a></li>
+                   <li><a href="#" [routerLink]="['/home/locales']" (click)="SeleccionarMenu('locales')" class="">Sucursales</a></li>
+                </ul>
+             </div>
+          </nav>
+          <aside class="col-12 col-m-4">
+             <div class="tituloPie">Más Info...</div>
+             <div class="datosPie">
+                <div class="datoPie"> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text=Hola%20Quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer"><i class="fas fa-phone"></i> 11-6204-0532 </a>  </div>
+                <div class="datoPie"> <a href="mailto:chingofiesta2019@gmail.com"> <i class="far fa-envelope"></i> chingofiesta2019@gmail.com </a></div>
+             </div>
+          </aside>
+          <div class="col-12 col-m-4">
+             <a href="#" [routerLink]="['/home/default']" (click)="SeleccionarMenu('default')">
+                <div class="logoPie"><img src="./assets/images/logo.png"></div>
+             </a>
+          </div>
+       </div>
+       <aside class="redes-foot">
+          <div class="red"><a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text=Hola%20Quiero%20hacer%20una%20consulta" target="_blank" title="Envianos whatsapps..."><i class="fab fa-whatsapp"></i></a></div>
+          <div class="red"><a href="mailto:chingofiesta2019@gmail.com" title="Envianos un e-mail..."><i class="far fa-envelope"></i> </a></div>
+          <div class="red"><a href="tel:1162040532" title="Llamanos, tu consulta no nos molesta..."><i class="fas fa-phone"></i></a></div>                  
+          <div class="red"><a href="https://www.facebook.com/chingofiesta/" target="_blank" title="Visita nuestro Facebook..."><i class="fab fa-facebook-f"></i></a></div>
+          <div class="red"><a href="https://www.instagram.com/Chingo_fiesta/" target="_blank" title="Visita nuestro Instagram..."><i class="fab fa-instagram"></i></a></div>
+          <div class="red"><a href="#" [routerLink]="['/home/ubicaciones']" (click)="SeleccionarMenu('ubicaciones')" title="Visita algunos de nuestros locales..."><i class="fas fa-map-marker-alt"></i></a></div>
+       </aside>
+    </div>
+ </footer>

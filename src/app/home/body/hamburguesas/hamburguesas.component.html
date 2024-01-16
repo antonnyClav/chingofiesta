@@ -1,0 +1,78 @@
+<div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let hamburguesa of hamburguesas" class="producto">
+       <div class="imagen"><img [src]="hamburguesa.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ hamburguesa.precio | number : '1.0-2'}} </div>
+       <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->       
+       <div class="marca"><img [src]="hamburguesa.marca"></div>       
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ hamburguesa.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ hamburguesa.texto1 + ' + ' }}
+            <br>
+                {{ hamburguesa.texto2 + ' + '}}            
+            <br>            
+                {{ hamburguesa.texto3 }}
+            </strong>
+           </span>
+       </div>
+       <div class="nombre-detalle">{{ hamburguesa.texto4 }}</div>
+    </div>
+ </div>
+ 
+ <div class="desktop-only">
+    <div class="sub-titulo-hamburguesas">Hamburguesas PREMIUM 125 grs</div>
+ </div>
+ <div class="mobile-only">
+    <div class="sub-titulo-hamburguesas-mobile">Hamburguesas PREMIUM 125 grs</div>
+ </div>
+ 
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+   <div *ngFor="let hamburguesa of hamburguesas_Caseras" class="producto">
+      <div class="imagen"><img [src]="hamburguesa.imagen" alt=""></div>
+      <!-- cuando consumo la api -->
+      <div class="valor ">${{ hamburguesa.precio | number : '1.0-2'}} </div>
+      <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
+      <div class="marca"><img [src]="hamburguesa.marca"></div>      
+      <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+      <div class="nombre">{{ hamburguesa.nombre }}</div>
+      <div class="texto ">
+         <span class="descripcion-promo">
+            <strong>
+                {{ hamburguesa.texto1 + ' + ' }}
+            <br>
+                {{ hamburguesa.texto2 + ' + '}}            
+            <br>            
+                {{ hamburguesa.texto3 }}
+            </strong>
+         </span>
+      </div>
+      <div class="nombre-detalle">{{ hamburguesa.texto4 }}</div>
+   </div>
+</div>
+
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let hamburguesa of hamburguesas_NoCaseras" class="producto">
+       <div class="imagen"><img [src]="hamburguesa.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ hamburguesa.precio | number : '1.0-2'}} </div>
+       <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
+       <div class="marca"><img [src]="hamburguesa.marca"></div>       
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ hamburguesa.nombre }}</div>
+       <div class="texto ">
+         <span class="descripcion-promo">
+            <strong>
+                {{ hamburguesa.texto1 + ' + ' }}
+            <br>
+                {{ hamburguesa.texto2 + ' + '}}            
+            <br>            
+                {{ hamburguesa.texto3 }}
+            </strong>
+         </span>
+       </div>
+       <div class="nombre-detalle">{{ hamburguesa.texto4 }}</div>
+    </div>
+ </div>

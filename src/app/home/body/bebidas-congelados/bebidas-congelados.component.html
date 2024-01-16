@@ -1,0 +1,31 @@
+<div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let oferta of ofertas" class="producto">
+       <div class="imagen"><img [src]="oferta.imagen" alt=""></div>       
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ oferta.precio | number : '1.0-2'}} </div>
+       <!-- <div class="valor ">{{ oferta.precio }} </div> -->
+       <div class="marca"><img [src]="oferta.marca"></div>
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ oferta.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ oferta.nombre }}</div>
+       <div class="texto ">
+            <span class="descripcion-promo">
+              <strong>
+                <ng-container *ngIf="oferta.texto1!=''">
+                     {{ oferta.texto1 }}            
+                 </ng-container>
+
+              <ng-container *ngIf="oferta.texto2!=''">
+                 <br>
+                  {{ oferta.texto2 }}            
+              </ng-container>
+
+              <ng-container *ngIf="oferta.texto3!=''">
+                 <br>
+                  {{ oferta.texto3 }}            
+              </ng-container>
+              </strong>
+            </span>
+            <div *ngIf="oferta.texto4!=''" class="nombre-detalle">{{ oferta.texto4 }}</div>
+        </div>
+    </div>
+</div>

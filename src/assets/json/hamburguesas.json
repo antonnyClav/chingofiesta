@@ -1,0 +1,240 @@
+[
+    {
+        "nombre" : "Promo 26", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$15.500",
+        "marca" : "./assets/swift.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "SWIFT 80 grs - 100% CARNE"
+    },
+    {
+        "nombre" : "Promo 27", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$24.500",
+        "marca" : "./assets/swift.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "32 Hamburguesas ",
+        "texto2" : "32 Panes ",
+        "texto3" : "1 Aderezo ",
+        "texto4" : "SWIFT 80 grs - 100% CARNE"
+    },
+    {
+        "nombre" : "Promo 28", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$46.000",
+        "marca" : "./assets/swift.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "60 Hamburguesas ",
+        "texto2" : "60 Panes ",
+        "texto3" : "1 Aderezo ",
+        "texto4" : "SWIFT 80 grs - 100% CARNE"
+    }
+    ,
+    {
+        "nombre" : "Unión Ganadera 70 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$18.000",
+        "marca" : "./assets/unionganadera.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Unión Ganadera 70 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$28.500",
+        "marca" : "./assets/unionganadera.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "32 Hamburguesas ",
+        "texto2" : "32 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Unión Ganadera 70 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$53.500",
+        "marca" : "./assets/unionganadera.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "60 Hamburguesas ",
+        "texto2" : "60 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Unión Ganadera - 83 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$20.000",
+        "marca" : "./assets/unionganadera.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Unión Ganadera - 83 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$31.500",
+        "marca" : "./assets/unionganadera.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "32 Hamburguesas ",
+        "texto2" : "32 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Unión Ganadera - 83 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$59.500",
+        "marca" : "./assets/unionganadera.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "60 Hamburguesas ",
+        "texto2" : "60 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+
+
+
+    {
+        "nombre" : "PATY 83 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$20.000",
+        "marca" : "./assets/paty.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "PATY 83 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$31.500",
+        "marca" : "./assets/paty.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "32 Hamburguesas ",
+        "texto2" : "32 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "PATY 83 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$59.500",
+        "marca" : "./assets/paty.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "60 Hamburguesas ",
+        "texto2" : "60 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },            
+    {
+        "nombre" : "100% CARNE - 80 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$12.000",
+        "marca" : "./assets/blacklabel.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "100% CARNE - 80 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$19.000",
+        "marca" : "./assets/blacklabel.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "32 Hamburguesas ",
+        "texto2" : "32 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "100% CARNE - 80 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$35.500",
+        "marca" : "./assets/blacklabel.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "60 Hamburguesas ",
+        "texto2" : "60 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "100% CARNE - HAMBURGUESA BOOGYS 120 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$22.000",
+        "marca" : "./assets/boogys.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "100% CARNE - HAMBURGUESA BOOGYS 120 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$43.500",
+        "marca" : "./assets/boogys.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "40 Hamburguesas ",
+        "texto2" : "40 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "100% CARNE - HAMBURGUESA BOOGYS 120 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$65.000",
+        "marca" : "./assets/boogys.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "60 Hamburguesas ",
+        "texto2" : "60 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "100% CARNE - HAMBURGUESA 110 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$15.000",
+        "marca" : "./assets/blacklabel.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "100% CARNE - HAMBURGUESA 110 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$29.500",
+        "marca" : "./assets/blacklabel.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "40 Hamburguesas ",
+        "texto2" : "40 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "100% CARNE - HAMBURGUESA 110 grs", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$44.000",
+        "marca" : "./assets/blacklabel.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "60 Hamburguesas ",
+        "texto2" : "60 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    }
+
+
+   
+]

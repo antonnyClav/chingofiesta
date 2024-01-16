@@ -1,0 +1,104 @@
+<div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let pancho of panchosLargos_v1" class="producto">
+       <div class="imagen"><img [src]="pancho.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ pancho.precio | number : '1.0-2'}} </div>
+       <!-- <div *ngIf="pancho.precio" class="valor ">{{ pancho.precio }} </div> --> 
+       <div class="marca"><img [src]="pancho.marca"></div>
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ pancho.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ pancho.texto1 + ' + ' }}
+            <br>
+                {{ pancho.texto2 + ' + '}}            
+            <br>            
+                {{ pancho.texto3 }}
+            </strong>
+        </span>
+       </div>
+       <div class="nombre-detalle">{{ pancho.texto4 }}</div>
+    </div>
+ </div>
+
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let pancho of panchosLargos_v2" class="producto">
+       <div class="imagen"><img [src]="pancho.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ pancho.precio | number : '1.0-2'}} </div>
+       <!-- <div *ngIf="pancho.precio" class="valor ">{{ pancho.precio }} </div> -->  
+       <div class="marcas-panchos">
+         <div class="marca"><img [src]="pancho.marca"></div>
+         <div class="marca1-pl"><img [src]="pancho.marca1"></div>
+       </div>
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ pancho.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ pancho.texto1 + ' + ' }}
+            <br>
+                {{ pancho.texto2 + ' + '}}            
+            <br>            
+                {{ pancho.texto3 }}
+            </strong>
+        </span>
+       </div>
+       <div class="nombre-detalle">{{ pancho.texto4 }}</div>
+    </div>
+ </div>
+
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let pancho of panchosLargos_v3" class="producto">
+       <div class="imagen"><img [src]="pancho.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ pancho.precio | number : '1.0-2'}} </div>
+       <!-- <div *ngIf="pancho.precio" class="valor ">{{ pancho.precio }} </div> -->        
+       <div class="marcas-panchos">
+         <div class="marca"><img [src]="pancho.marca"></div>
+         <div class="marca1-pl"><img [src]="pancho.marca1"></div>
+       </div>
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ pancho.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ pancho.texto1 + ' + ' }}
+            <br>
+                {{ pancho.texto2 + ' + '}}            
+            <br>            
+                {{ pancho.texto3 }}
+            </strong>
+        </span>
+       </div>
+       <div class="nombre-detalle">{{ pancho.texto4 }}</div>
+    </div>
+ </div>
+
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let pancho of panchosLargos_v4" class="producto">
+       <div class="imagen"><img [src]="pancho.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ pancho.precio | number : '1.0-2'}} </div>
+       <!-- <div *ngIf="pancho.precio" class="valor ">{{ pancho.precio }} </div> -->        
+       <div class="marcas-panchos">
+         <div class="marca"><img [src]="pancho.marca"></div>
+         <div class="marca1-pl"><img [src]="pancho.marca1"></div>
+       </div>
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ pancho.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ pancho.texto1 + ' + ' }}
+            <br>
+                {{ pancho.texto2 + ' + '}}            
+            <br>            
+                {{ pancho.texto3 }}
+            </strong>
+        </span>
+       </div>
+       <div class="nombre-detalle">{{ pancho.texto4 }}</div>
+    </div>
+ </div>

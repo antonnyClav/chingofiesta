@@ -1,0 +1,124 @@
+[
+    {
+        "nombre" : "Swift Casera", 
+        "imagen" : "./assets/swift_casera.png",
+        "precio" : "$13.800",
+        "marca" : "./assets/swift.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "12 Hamburguesas ",
+        "texto2" : "12 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "PREMIUM 100% CARNE - 125 grs"
+    },
+    {
+        "nombre" : "Swift Casera", 
+        "imagen" : "./assets/swift_casera.png",
+        "precio" : "$23.000",
+        "marca" : "./assets/swift.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "PREMIUM 100% CARNE - 125 grs"
+    },
+    {
+        "nombre" : "Swift Casera", 
+        "imagen" : "./assets/swift_casera.png",
+        "precio" : "$45.000",
+        "marca" : "./assets/swift.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "40 Hamburguesas ",
+        "texto2" : "40 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "PREMIUM 100% CARNE - 125 grs"
+    },
+    {
+        "nombre" : "Unión Ganadera", 
+        "imagen" : "./assets/union_ganadera.png",
+        "precio" : "$26.000",
+        "marca" : "./assets/unionganadera.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "PREMIUM 100% CARNE - 125 grs"
+    },
+    {
+        "nombre" : "Unión Ganadera", 
+        "imagen" : "./assets/union_ganadera.png",
+        "precio" : "$51.000",
+        "marca" : "./assets/unionganadera.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "40 Hamburguesas ",
+        "texto2" : "40 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "PREMIUM 100% CARNE - 125 grs"
+    },
+
+    {
+        "nombre" : "Paty", 
+        "imagen" : "./assets/paty_clasica.png",
+        "precio" : "$26.000",
+        "marca" : "./assets/paty.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "PREMIUM 100% CARNE - 125 grs"
+    },
+    {
+        "nombre" : "Paty", 
+        "imagen" : "./assets/paty_clasica.png",
+        "precio" : "$51.000",
+        "marca" : "./assets/paty.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "40 Hamburguesas ",
+        "texto2" : "40 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "PREMIUM 100% CARNE - 125 grs"
+    },    
+    {
+        "nombre" : "Swift XL", 
+        "imagen" : "./assets/swift_xl.png",
+        "precio" : "$23.000",
+        "marca" : "./assets/swift.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "PREMIUM 100% CARNE - 125 grs"
+    },
+    {
+        "nombre" : "Swift XL", 
+        "imagen" : "./assets/swift_xl.png",
+        "precio" : "$45.000",
+        "marca" : "./assets/swift.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "40 Hamburguesas ",
+        "texto2" : "40 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "PREMIUM 100% CARNE - 125 grs"
+    },
+    {
+        "nombre" : "Boogys x 200 grs", 
+        "imagen" : "./assets/boogys_x200.png",
+        "precio" : "$32.000",
+        "marca" : "./assets/boogys.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "PREMIUM 100% CARNE - 200 grs"
+    },
+    {
+        "nombre" : "Unión Ganadera", 
+        "imagen" : "./assets/union_ganadera_140.png",
+        "precio" : "$28.000",
+        "marca" : "./assets/unionganadera.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "20 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "PREMIUM 100% CARNE - 140 grs"
+    }
+]

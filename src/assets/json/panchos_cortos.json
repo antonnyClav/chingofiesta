@@ -1,0 +1,98 @@
+[
+    {
+        "nombre" : "Promo 5 (Económica)", 
+        "imagen" : "./assets/pancho-corto.png",
+        "precio" : "$6000",
+        "marca" : "",
+        "marca1" : "",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "30 Panchos ",
+        "texto2" : "30 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo 6 (Económica)", 
+        "imagen" : "./assets/pancho-corto.png",
+        "precio" : "$11.800",
+        "marca" : "",
+        "marca1" : "",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "60 Panchos ",
+        "texto2" : "60 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo 5", 
+        "imagen" : "./assets/pancho-corto.png",
+        "precio" : "$7.500",
+        "marca" : "./assets/yeyo.png",
+        "marca1" : "",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "30 Panchos ",
+        "texto2" : "30 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo 6", 
+        "imagen" : "./assets/pancho-corto.png",
+        "precio" : "$14.800",
+        "marca" : "./assets/yeyo.png",
+        "marca1" : "",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "60 Panchos ",
+        "texto2" : "60 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo Unión Ganadera", 
+        "imagen" : "./assets/pancho-corto.png",
+        "precio" : "$9.000",
+        "marca" : "./assets/unionganadera.png",
+        "marca1" : "./assets/yeyo.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "30 Panchos",
+        "texto2" : "30 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo Unión Ganadera", 
+        "imagen" : "./assets/pancho-corto.png",
+        "precio" : "$17.800",
+        "marca" : "./assets/unionganadera.png",
+        "marca1" : "./assets/yeyo.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "60 Panchos ",
+        "texto2" : "60 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo Swift", 
+        "imagen" : "./assets/pancho-corto.png",
+        "precio" : "$8.500",
+        "marca" : "./assets/swift.png",
+        "marca1" : "./assets/yeyo.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "30 Panchos ",
+        "texto2" : "30 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo Swift", 
+        "imagen" : "./assets/pancho-corto.png",
+        "precio" : "$15.500",
+        "marca" : "./assets/swift.png",
+        "marca1" : "./assets/yeyo.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "60 Panchos ",
+        "texto2" : "60 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    }
+]

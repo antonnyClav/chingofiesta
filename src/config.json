@@ -1,0 +1,9 @@
+{
+  "captcha": false,
+  "API_URL_i": "https://localhost:444/api/",
+  "API_URL_prod": "https://chingofiesta.com/chingo/api/",
+  "API_URL": "https://localhost:44365/api/",
+  "Moneda":"ARS",
+  "sinDecimales":["ARS"],
+  "Actualizando": true
+}

@@ -1,0 +1,48 @@
+<!-- <div class="contenido-centrado">
+    <div class="desktop-only">
+        <img src="./assets/encontruccion.png" alt="" height="500" width="500">
+    </div>
+    <div class="mobile-only">
+        <img src="./assets/encontruccion.png" alt="" height="400" width="400">
+    </div>    
+</div> -->
+
+<div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let snack of snacks" class="producto">
+       <div class="imagen"><img [src]="snack.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ snack.precio | number : '1.0-2'}} </div>
+       <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
+       <div class="marca"><img [src]="snack.marca"></div>       
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ snack.nombre }}</div>
+       <div class="texto ">
+         <span class="descripcion-promo">
+            <strong>
+                {{ snack.texto1 }}            
+            </strong>
+         </span>
+       </div>
+       <div class="nombre-detalle">{{ snack.texto4 }}</div>
+    </div>
+ </div>
+  
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let snack of snacks_combos" class="producto">
+       <div class="imagen-snacks"><img [src]="snack.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor-snacks">${{ snack.precio | number : '1.0-2'}} </div>
+       <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
+       <div class="marca"><img [src]="snack.marca"></div>       
+       <div class="consulta-snacks"> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre-snacks">{{ snack.nombre }}</div>
+       <div class="texto ">
+         <span class="descripcion-promo">
+            <strong>
+                {{ snack.texto1 }}
+            </strong>
+         </span>
+       </div>
+       <div class="nombre-detalle">{{ snack.texto4 }}</div>
+    </div>
+ </div>

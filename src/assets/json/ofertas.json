@@ -1,0 +1,46 @@
+[
+    {
+        "nombre" : "Salchichas Swift Largas", 
+        "imagen" : "./assets/swift_salchichas_largas.png",
+        "precio" : "$5.500",
+        "marca" : "./assets/swift.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "12 salchichas ",
+        "texto2" : "12 Panes",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Pack Coca-Cola", 
+        "imagen" : "./assets/pack_coca_cola.png",
+        "precio" : "$10.800",
+        "marca" : "./assets/cocacola.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "Pack x 8 unidades ",
+        "texto2" : "2.25 Litros ",
+        "texto3" : "No te la pierdas!!! ",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Maxi Hamburguesas", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$12.000",
+        "marca" : "",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "40 Hamburguesas ",
+        "texto2" : "40 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : "110 grs"
+    },
+    {
+        "nombre" : "Hamburguesas", 
+        "imagen" : "./assets/hamburguesas.png",
+        "precio" : "$5.000",
+        "marca" : "",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "20 Hamburguesas ",
+        "texto2" : "",
+        "texto3" : "",
+        "texto4" : "55 grs"
+    }
+]

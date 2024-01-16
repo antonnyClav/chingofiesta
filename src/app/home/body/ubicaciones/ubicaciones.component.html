@@ -1,0 +1,33 @@
+
+<div class="container-mapa">    
+    <div class="container-mapa-direcciones">
+        <ul>
+            <li><i class="fas fa-building"></i>&nbsp; <span [ngClass]="(Direccion == 1) ? 'enlace-seleccionado' : 'enlace'" (click)="SeleccionarDireccion(1)">Eva peron 3495, Lanús</span></li>
+            <br>
+            <li><i class="fas fa-building"></i>&nbsp; <span [ngClass]="(Direccion == 2) ? 'enlace-seleccionado' : 'enlace'" (click)="SeleccionarDireccion(2)">Colombres 1798, Lomas de Zamora</span></li>
+            <br>
+            <li><i class="fas fa-building"></i>&nbsp; <span [ngClass]="(Direccion == 3) ? 'enlace-seleccionado' : 'enlace'" (click)="SeleccionarDireccion(3)">Sarmiento 2, Glew</span></li>
+            <br>
+            <li><i class="fas fa-building"></i>&nbsp; <span [ngClass]="(Direccion == 4) ? 'enlace-seleccionado' : 'enlace'" (click)="SeleccionarDireccion(4)">Calle 4 250, Guernica</span></li>
+        </ul>
+        
+    </div>
+    
+    <div class="desktop-only">
+        <div class="container-mapa-google">
+           <div class="mapouter" *ngIf="Direccion==1"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=Eva peron 3495 Lanús Chingo Fiesta&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>                      
+           <div class="mapouter" *ngIf="Direccion==2"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=Colombres 1798, Lomas de Zamora&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
+           <div class="mapouter" *ngIf="Direccion==3"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=Sarmiento 2 Glew Chingo&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
+           <div class="mapouter" *ngIf="Direccion==4"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=escalabrini ortiz 250 guernica &t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>                   
+        </div>
+    </div>
+    <div class="mobile-only">
+        <div class="container-mobile-mapa-google">
+            <div class="mapouter" *ngIf="Direccion==1"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Eva peron 3495, Lanús Chingo&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+            <div class="mapouter" *ngIf="Direccion==2"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Colombres 1798, Lomas de Zamora&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+            <div class="mapouter" *ngIf="Direccion==3"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Sarmiento 2, Glew Chingo&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+            <div class="mapouter" *ngIf="Direccion==4"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=escalabrini ortiz 250 guernica &t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+        </div>
+    </div>
+</div>  
+<!-- https://embedgooglemap.2yu.co/?gclid=EAIaIQobChMIwIG7ybCcgwMVs0FIAB0XvA0OEAAYASAAEgLqe_D_BwE -->

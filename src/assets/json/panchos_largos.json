@@ -1,0 +1,98 @@
+[
+    {
+        "nombre" : "Promo 7 (Económica)", 
+        "imagen" : "./assets/panchos.png",
+        "precio" : "$6.500",
+        "marca" : "",
+        "marca1" : "",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "18 Super Panchos ",
+        "texto2" : "18 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo 8 (Económica)", 
+        "imagen" : "./assets/panchos.png",
+        "precio" : "$12.800",
+        "marca" : "",
+        "marca1" : "",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "36 Super Panchos ",
+        "texto2" : "36 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo 7", 
+        "imagen" : "./assets/panchos.png",
+        "precio" : "$8.000",
+        "marca" : "./assets/panigazzi.png",
+        "marca1" : "./assets/ranchoalto.png",      
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "18 Super Panchos ",
+        "texto2" : "18 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo 8", 
+        "imagen" : "./assets/panchos.png",
+        "precio" : "$15.800",
+        "marca" : "./assets/panigazzi.png",
+        "marca1" : "./assets/ranchoalto.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "36 Super Panchos ",
+        "texto2" : "36 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo Unión Ganadera", 
+        "imagen" : "./assets/panchos.png",
+        "precio" : "$7.000",
+        "marca" : "./assets/unionganadera.png",
+        "marca1" : "./assets/panigazzi.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "12 Super Panchos ",
+        "texto2" : "12 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo Unión Ganadera", 
+        "imagen" : "./assets/panchos.png",
+        "precio" : "$13.500",
+        "marca" : "./assets/unionganadera.png",
+        "marca1" : "./assets/panigazzi.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "24 Super Panchos ",
+        "texto2" : "24 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo Swift", 
+        "imagen" : "./assets/panchos.png",
+        "precio" : "$6.500",
+        "marca" : "./assets/swift.png",
+        "marca1" : "./assets/panigazzi.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "12 Super Panchos ",
+        "texto2" : "12 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    },
+    {
+        "nombre" : "Promo Swift", 
+        "imagen" : "./assets/panchos.png",
+        "precio" : "$12.500",
+        "marca" : "./assets/swift.png",
+        "marca1" : "./assets/panigazzi.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "24 Super Panchos ",
+        "texto2" : "24 Panes ",
+        "texto3" : "1 Aderezo",
+        "texto4" : ""
+    }
+]

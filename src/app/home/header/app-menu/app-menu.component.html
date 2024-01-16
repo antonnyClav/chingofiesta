@@ -1,0 +1,44 @@
+<div id="myNav" class="overlay" style="height: 0%;">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">×</a>
+    <div class="overlay-content">
+       <ul>
+          <!-- <li><a href="#" [routerLink]="['/home/productos']" (click)="SeleccionarMenu('productos');closeNav()" class="">Productos</a></li> -->
+          <li><a href="#" [routerLink]="['/home/default']" (click)="SeleccionarMenu('default');closeNav()" class="">Ofertas</a></li>
+          <li><a href="#" [routerLink]="['/home/locales']" (click)="SeleccionarMenu('locales');closeNav()" class="">Sucursales</a></li>
+       </ul>
+    </div>
+ </div>
+ <div class="whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text=Hola%20Quiero%20hacer%20una%20consulta" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    </a>
+ </div>
+ 
+ <div class="header2">
+    <div class="contenedor">
+       <div class="ordenHeader2">
+          <!-- <div class="logo aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300"><a href="/index.html"><img data-aos="zoom-in" data-aos-delay="300" src="./assets/images/logo.png" alt=""></a></div> -->
+          <div class="logo"><a href="#" [routerLink]="['/home/default']" (click)="SeleccionarMenu('default')"><img data-aos="zoom-in" data-aos-delay="300" src="./assets/images/logo.png" alt=""></a></div>
+             
+             <!-- <div class="copete2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="700"> -->
+             <div class="copete2 aos-init aos-animate">
+             <aside class="redes">
+                <div class="red"><a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text=Hola%20Quiero%20hacer%20una%20consulta" target="_blank" title="Envianos whatsapps..."><i class="fab fa-whatsapp"></i></a></div>
+                <div class="red"><a href="mailto:anto_clav@hotmail.com" title="Envianos un e-mail..."><i class="far fa-envelope"></i> </a></div>
+                <div class="red"><a href="tel:1126432987" title="Llamanos, tu consulta no nos molesta..."><i class="fas fa-phone"></i></a></div>                     
+                <div class="red"><a href="https://www.facebook.com/chingofiesta/" title="Visita nuestro Facebook..." target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+                <div class="red"><a href="https://www.instagram.com/Chingo_fiesta/" title="Visita nuestro Instagram..." target="_blank"><i class="fab fa-instagram"></i></a></div>
+                <div class="red"><a href="#" [routerLink]="['/home/ubicaciones']" (click)="SeleccionarMenu('ubicaciones')" title="Visita algunos de nuestros locales..."><i class="fas fa-map-marker-alt"></i></a></div>
+             </aside>
+             <div class="menuMovil" (click)="openNav()"><i class="fa fa-bars fa-2x"></i></div>
+             <nav class="menu">
+                <ul>
+                   <!-- <li><a href="#" [routerLink]="['/home/productos']" class="" (click)="SeleccionarMenu('productos')">Productos</a></li> -->
+                   <li><a href="#" [routerLink]="['/home/default']" class="" (click)="SeleccionarMenu('default')">Ofertas</a></li>
+                   <li><a href="#" [routerLink]="['/home/locales']" class="" (click)="SeleccionarMenu('locales')">Sucursales</a></li>
+                </ul>
+             </nav>
+          </div>
+       </div>
+    </div>
+ </div>

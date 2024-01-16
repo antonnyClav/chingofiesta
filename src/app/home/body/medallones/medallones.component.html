@@ -1,0 +1,196 @@
+<div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let medallon of medallones_promo_1_2_3" class="producto">
+       <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
+       <div class="marca"><img [src]="medallon.marca"></div>
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ medallon.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ medallon.texto1 + ' + ' }}
+            <br>
+                {{ medallon.texto2 + ' + '}}            
+            <br>            
+                {{ medallon.texto3 }}
+            </strong>
+        </span>
+       </div>
+       <div class="nombre-detalle">{{ medallon.texto4 }}</div>
+    </div>
+ </div>
+
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let medallon of medallones_promo_14_15_16" class="producto">
+       <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
+       <div class="marca"><img [src]="medallon.marca"></div>       
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ medallon.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ medallon.texto1 + ' + ' }}
+            <br>
+                {{ medallon.texto2 + ' + '}}            
+            <br>            
+                {{ medallon.texto3 }}
+            </strong>
+        </span>
+       </div>
+       <div class="nombre-detalle">{{ medallon.texto4 }}</div>
+    </div>
+ </div>
+  
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let medallon of medallonesMaxi_31_32_33; let i = index" class="producto">
+       <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
+       <div class="marcas-panchos">
+           <div class="marca"><img [src]="medallon.marca"></div>
+           <div class="marca"><img [src]="medallon.marca1"></div>
+       </div>       
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ medallon.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ medallon.texto1 + ' + ' }}
+            <br>
+                {{ medallon.texto2 + ' + '}}            
+            <br>            
+                {{ medallon.texto3 }}
+            </strong>
+        </span>
+       </div>
+       <div class="nombre-detalle">{{ medallon.texto4 }}</div>
+
+       <!-- <ng-container *ngIf="i % 3 === 0">
+        </ng-container> -->
+    </div>
+ </div>
+ 
+ <div class="desktop-only">
+    <div class="sub-titulo-hamburguesas">MAXI Hamburguesas</div>
+ </div>
+ <div class="mobile-only">
+    <div class="sub-titulo-hamburguesas-mobile">MAXI Hamburguesas</div>
+ </div>
+ 
+ 
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let medallon of medallonesMaxi_41_42_43; let i = index" class="producto">
+       <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
+       <div class="marca"><img [src]="medallon.marca"></div>       
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ medallon.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ medallon.texto1 + ' + ' }}
+            <br>
+                {{ medallon.texto2 + ' + '}}            
+            <br>            
+                {{ medallon.texto3 }}
+            </strong>
+        </span>
+       </div>
+       <div class="nombre-detalle">{{ medallon.texto4 }}</div>
+
+       <!-- <ng-container *ngIf="i % 3 === 0">
+        </ng-container> -->
+    </div>
+ </div>
+
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let medallon of medallonesMaxi_50_51_52; let i = index" class="producto">
+       <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
+       <div class="marca"><img [src]="medallon.marca"></div>       
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ medallon.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ medallon.texto1 + ' + ' }}
+            <br>
+                {{ medallon.texto2 + ' + '}}            
+            <br>            
+                {{ medallon.texto3 }}
+            </strong>
+        </span>
+       </div>
+       <div class="nombre-detalle">{{ medallon.texto4 }}</div>
+
+       <!-- <ng-container *ngIf="i % 3 === 0">
+        </ng-container> -->
+    </div>
+ </div>
+ 
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let medallon of medallonesMaxi_11_12_13; let i = index" class="producto">
+       <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
+       <div class="marca"><img [src]="medallon.marca"></div>
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ medallon.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ medallon.texto1 + ' + ' }}
+            <br>
+                {{ medallon.texto2 + ' + '}}            
+            <br>            
+                {{ medallon.texto3 }}
+            </strong>
+        </span>
+       </div>
+       <div class="nombre-detalle">{{ medallon.texto4 }}</div>
+
+       <!-- <ng-container *ngIf="i % 3 === 0">
+        </ng-container> -->
+    </div>
+ </div> 
+
+ <div class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div *ngFor="let medallon of medallonesMaxi_23_24_25; let i = index" class="producto">
+       <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
+       <!-- cuando consumo la api -->
+       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
+       <div class="marcas-panchos">
+          <div class="marca"><img [src]="medallon.marca"></div>
+          <div class="marca"><img [src]="medallon.marca1"></div>
+       </div>       
+       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="nombre">{{ medallon.nombre }}</div>
+       <div class="texto ">
+          <span class="descripcion-promo">
+            <strong>
+                {{ medallon.texto1 + ' + ' }}
+            <br>
+                {{ medallon.texto2 + ' + '}}            
+            <br>            
+                {{ medallon.texto3 }}
+            </strong>
+        </span>
+       </div>
+       <div class="nombre-detalle">{{ medallon.texto4 }}</div>
+
+       <!-- <ng-container *ngIf="i % 3 === 0">
+        </ng-container> -->
+    </div>
+ </div>

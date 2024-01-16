@@ -1,0 +1,57 @@
+<div class="subMenu" id="subMenu">               
+    
+   <a href="#" [routerLink]="['/home/hamburguesas']" (click)="SeleccionarSubMenu('hamburguesas')">
+       <div class="imagen">
+          <div class="contImagen"><img src="./assets/hamburguesas.png" alt="Hamburguesas"></div>
+       </div>
+       <h2 [ngClass]="(SubMenuSeleccionado == 'hamburguesas') ? 'subMenu-seleccionado' : 'subMenu-No-seleccionado'">Hamburguesas</h2>
+    </a>
+
+    <a href="#" [routerLink]="['/home/medallones']" (click)="SeleccionarSubMenu('medallones')">
+      <div class="imagen">
+         <div class="contImagen"><img src="./assets/medallones.png" alt="Medallones"></div>
+      </div>
+      <h2 [ngClass]="(SubMenuSeleccionado == 'medallones') ? 'subMenu-seleccionado' : 'subMenu-No-seleccionado'">Medallones</h2>
+   </a>
+
+    <a href="#" [routerLink]="['/home/panchos']" (click)="SeleccionarSubMenu('panchos')">
+       <div class="imagen">
+          <div class="contImagen"><img src="./assets/pancho-corto.png" alt="panchos"></div>
+       </div>
+       <h2 [ngClass]="(SubMenuSeleccionado == 'panchos') ? 'subMenu-seleccionado' : 'subMenu-No-seleccionado'">Panchos Cortos</h2>
+    </a>
+   
+    <a href="#" [routerLink]="['/home/panchos_largos']" (click)="SeleccionarSubMenu('panchos_largos')">
+      <div class="imagen">
+         <div class="contImagen"><img src="./assets/panchos.png" alt="panchos largo"></div>
+      </div>
+      <h2 [ngClass]="(SubMenuSeleccionado == 'panchos_largos') ? 'subMenu-seleccionado' : 'subMenu-No-seleccionado'">Panchos Largos</h2>
+    </a>
+
+    <a href="#" [routerLink]="['/home/snacks']" (click)="SeleccionarSubMenu('snacks')">
+       <div class="imagen">
+          <div class="contImagen"><img src="./assets/snacks.png" alt="Snacks"></div>
+       </div>
+       <h2 [ngClass]="(SubMenuSeleccionado == 'snacks') ? 'subMenu-seleccionado' : 'subMenu-No-seleccionado'">Snacks</h2>
+    </a>  
+   
+    <a href="#" [routerLink]="['/home/bebidas_congelados']" (click)="SeleccionarSubMenu('bebidas_congelados')">
+       <div class="imagen">
+          <div class="contImagen"><img src="./assets/bebidas_congelados.png" alt="Bebidas &amp; Congelados"></div>
+       </div>
+       <h2 [ngClass]="(SubMenuSeleccionado == 'bebidas_congelados') ? 'subMenu-seleccionado' : 'subMenu-No-seleccionado'">Bebidas &amp; Congelados</h2>
+    </a>   
+  
+    <a href="#" [routerLink]="['/home/promo_cumple']" (click)="SeleccionarSubMenu('promo_cumple')">
+       <div class="imagen">
+          <div class="contImagen"><img src="./assets/promo_cumpleaños.png" alt="Promos Cumple"></div>
+       </div>
+       <h2 [ngClass]="(SubMenuSeleccionado == 'promo_cumple') ? 'subMenu-seleccionado' : 'subMenu-No-seleccionado'">Promos Cumpleaños</h2>
+    </a>
+ </div>
+
+ <div class="contenidoProducto">
+   <h1 data-aos="zoom-in" data-aos-delay="300" class="aos-init aos-animate"></h1>
+   <div data-aos="zoom-in" data-aos-delay="300" class="aos-init aos-animate">
+   </div>
+</div>

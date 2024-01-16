@@ -1,0 +1,13 @@
+[
+    {
+        "nombre" : "Pack Coca-Cola", 
+        "imagen" : "./assets/pack_coca_cola.png",
+        "precio" : "$10.800",
+        "marca" : "./assets/cocacola.png",
+        "consulta" : "Hola quiero consultar sobre este producto: ",
+        "texto1" : "Pack x 8 unidades ",
+        "texto2" : "2.25 Litros ",
+        "texto3" : "No te la pierdas!!! ",
+        "texto4" : ""
+    }
+]
