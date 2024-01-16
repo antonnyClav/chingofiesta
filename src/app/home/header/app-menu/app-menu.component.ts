@@ -11,6 +11,7 @@ export class AppMenuComponent implements OnInit{
   MenuSeleccionado: string = "";
   EsMobile: boolean = false;
 
+  
   constructor(
     private servicioComunicacion: ComunicacionService
   ) {  
