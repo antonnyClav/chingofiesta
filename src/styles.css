@@ -809,6 +809,23 @@
    margin-top: -230px;
    margin-left: -50px;
  }
+ .productos .producto .valor-sin-precio{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  transform: rotate(-20deg);
+  background-image: url("./assets/fondoprecio.png");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 90% 105%;
+  width: 300px;
+  height: 95px;
+  position: absolute;
+  margin-top: -230px;
+  margin-left: -50px;
+ }
+
  .productos .producto .imagen-promo {
   width: 300px;
   height: auto;

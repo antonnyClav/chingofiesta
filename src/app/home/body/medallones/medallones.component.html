@@ -2,7 +2,8 @@
     <div *ngFor="let medallon of medallones_promo_1_2_3" class="producto">
        <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
        <!-- cuando consumo la api -->
-       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <div *ngIf="medallon.precio!='0'" class="valor">${{ medallon.precio | number : '1.0-2'}}</div>
+       <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marca"><img [src]="medallon.marca"></div>
        <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
@@ -26,7 +27,8 @@
     <div *ngFor="let medallon of medallones_promo_14_15_16" class="producto">
        <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
        <!-- cuando consumo la api -->
-       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <div *ngIf="medallon.precio!='0'" class="valor">${{ medallon.precio | number : '1.0-2'}}</div>
+       <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marca"><img [src]="medallon.marca"></div>       
        <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
@@ -50,7 +52,8 @@
     <div *ngFor="let medallon of medallonesMaxi_31_32_33; let i = index" class="producto">
        <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
        <!-- cuando consumo la api -->
-       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <div *ngIf="medallon.precio!='0'" class="valor">${{ medallon.precio | number : '1.0-2'}}</div>
+       <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marcas-panchos">
            <div class="marca"><img [src]="medallon.marca"></div>
@@ -88,7 +91,8 @@
     <div *ngFor="let medallon of medallonesMaxi_41_42_43; let i = index" class="producto">
        <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
        <!-- cuando consumo la api -->
-       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <div *ngIf="medallon.precio!='0'" class="valor">${{ medallon.precio | number : '1.0-2'}}</div>
+       <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marca"><img [src]="medallon.marca"></div>       
        <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
@@ -115,7 +119,8 @@
     <div *ngFor="let medallon of medallonesMaxi_50_51_52; let i = index" class="producto">
        <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
        <!-- cuando consumo la api -->
-       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <div *ngIf="medallon.precio!='0'" class="valor">${{ medallon.precio | number : '1.0-2'}}</div>
+       <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marca"><img [src]="medallon.marca"></div>       
        <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
@@ -142,7 +147,8 @@
     <div *ngFor="let medallon of medallonesMaxi_11_12_13; let i = index" class="producto">
        <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
        <!-- cuando consumo la api -->
-       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <div *ngIf="medallon.precio!='0'" class="valor">${{ medallon.precio | number : '1.0-2'}}</div>
+       <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marca"><img [src]="medallon.marca"></div>
        <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
@@ -169,7 +175,8 @@
     <div *ngFor="let medallon of medallonesMaxi_23_24_25; let i = index" class="producto">
        <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
        <!-- cuando consumo la api -->
-       <div class="valor ">${{ medallon.precio | number : '1.0-2'}} </div>
+       <div *ngIf="medallon.precio!='0'" class="valor">${{ medallon.precio | number : '1.0-2'}}</div>
+       <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marcas-panchos">
           <div class="marca"><img [src]="medallon.marca"></div>

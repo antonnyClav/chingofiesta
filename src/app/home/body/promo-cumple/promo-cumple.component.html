@@ -12,6 +12,8 @@
        <div class="imagen-promo"><img [src]="promo.imagen" alt=""></div>
        <!-- cuando consumo la api -->
        <div class="valor-promo">${{ promo.precio | number : '1.0-2'}} </div>
+       <div *ngIf="promo.precio!='0'" class="valor-promo">${{ promo.precio | number : '1.0-2'}}</div>
+       <div *ngIf="promo.precio=='0'" class="valor-sin-precio">Consultar $</div> 
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marcas-panchos">
            <div class="marca-promo"><img [src]="promo.marca"></div>

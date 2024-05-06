@@ -11,7 +11,8 @@
     <div *ngFor="let snack of snacks" class="producto">
        <div class="imagen"><img [src]="snack.imagen" alt=""></div>
        <!-- cuando consumo la api -->
-       <div class="valor ">${{ snack.precio | number : '1.0-2'}} </div>
+       <div *ngIf="snack.precio!='0'" class="valor">${{ snack.precio | number : '1.0-2'}}</div>
+       <div *ngIf="snack.precio=='0'" class="valor-sin-precio">Consultar $</div> 
        <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
        <div class="marca"><img [src]="snack.marca"></div>       
        <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
@@ -31,7 +32,8 @@
     <div *ngFor="let snack of snacks_combos" class="producto">
        <div class="imagen-snacks"><img [src]="snack.imagen" alt=""></div>
        <!-- cuando consumo la api -->
-       <div class="valor-snacks">${{ snack.precio | number : '1.0-2'}} </div>
+       <div *ngIf="snack.precio!='0'" class="valor-snacks">${{ snack.precio | number : '1.0-2'}}</div>
+       <div *ngIf="snack.precio=='0'" class="valor-sin-precio">Consultar $</div> 
        <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
        <div class="marca"><img [src]="snack.marca"></div>       
        <div class="consulta-snacks"> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>

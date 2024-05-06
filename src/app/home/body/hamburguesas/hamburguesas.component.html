@@ -2,7 +2,8 @@
     <div *ngFor="let hamburguesa of hamburguesas" class="producto">
        <div class="imagen"><img [src]="hamburguesa.imagen" alt=""></div>
        <!-- cuando consumo la api -->
-       <div class="valor ">${{ hamburguesa.precio | number : '1.0-2'}} </div>
+       <div *ngIf="hamburguesa.precio!='0'" class="valor">${{ hamburguesa.precio | number : '1.0-2'}}</div>
+       <div *ngIf="hamburguesa.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->       
        <div class="marca"><img [src]="hamburguesa.marca"></div>       
        <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
@@ -33,7 +34,8 @@
    <div *ngFor="let hamburguesa of hamburguesas_Caseras" class="producto">
       <div class="imagen"><img [src]="hamburguesa.imagen" alt=""></div>
       <!-- cuando consumo la api -->
-      <div class="valor ">${{ hamburguesa.precio | number : '1.0-2'}} </div>
+      <div *ngIf="hamburguesa.precio!='0'" class="valor">${{ hamburguesa.precio | number : '1.0-2'}}</div>
+      <div *ngIf="hamburguesa.precio=='0'" class="valor-sin-precio">Consultar $</div>
       <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
       <div class="marca"><img [src]="hamburguesa.marca"></div>      
       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
@@ -57,7 +59,8 @@
     <div *ngFor="let hamburguesa of hamburguesas_NoCaseras" class="producto">
        <div class="imagen"><img [src]="hamburguesa.imagen" alt=""></div>
        <!-- cuando consumo la api -->
-       <div class="valor ">${{ hamburguesa.precio | number : '1.0-2'}} </div>
+       <div *ngIf="hamburguesa.precio!='0'" class="valor">${{ hamburguesa.precio | number : '1.0-2'}}</div>
+       <div *ngIf="hamburguesa.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
        <div class="marca"><img [src]="hamburguesa.marca"></div>       
        <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>

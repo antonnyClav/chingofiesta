@@ -10,22 +10,22 @@ import { PublicacionesService } from 'src/app/shared/services/Publicaciones.serv
 })
 export class BebidasCongeladosComponent implements OnInit{
   constructor(private router: Router, private publicacionesService: PublicacionesService) {
-    this.getOfertas();
+    this.getBebidas();
   }
-  ofertas: PublicacionExt[] = [];
+  bebidas: PublicacionExt[] = [];
 
   ngOnInit(): void {
 
   }
 
-  getOfertas() {
+  getBebidas() {
     this.publicacionesService.getBebidasCongelados()
     /*.pipe(
       map( response => response )
     )*/
     .subscribe( data => { 
       //console.log(data);
-      this.ofertas = data;
+      this.bebidas = data;
     });
   }
 }
