@@ -8,6 +8,8 @@ class Config {
   API_URL_DEBUG!: string;
   Moneda!: string;
   sinDecimales!: Array<string>;
+  Actualizando!:boolean;
+  UrlConsultaWhatsaap!:string;
 }
 
 @Injectable({

@@ -15,7 +15,7 @@
        <div *ngIf="snack.precio=='0'" class="valor-sin-precio">Consultar $</div> 
        <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
        <div class="marca"><img [src]="snack.marca"></div>       
-       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta "> <a href="{{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ snack.nombre }}</div>
        <div class="texto ">
          <span class="descripcion-promo">
@@ -36,7 +36,7 @@
        <div *ngIf="snack.precio=='0'" class="valor-sin-precio">Consultar $</div> 
        <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
        <div class="marca"><img [src]="snack.marca"></div>       
-       <div class="consulta-snacks"> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta-snacks"> <a href="{{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre-snacks">{{ snack.nombre }}</div>
        <div class="texto ">
          <span class="descripcion-promo">

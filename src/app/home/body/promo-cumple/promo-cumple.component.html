@@ -19,7 +19,7 @@
            <div class="marca-promo"><img [src]="promo.marca"></div>
            <div class="marca-promo"><img [src]="promo.marca1"></div>
        </div>       
-       <div class="consulta "> <a href="https://api.whatsapp.com/send?phone=5491162040532&amp;text={{ promo.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta "> <a href="{{promo.consulta}}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ promo.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">

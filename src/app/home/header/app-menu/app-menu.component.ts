@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import { ComunicacionService } from 'src/app/shared/services/ComunicacionService';
+import { ConfigService } from '../../../../app/shared/services/config.service';
 
 @Component({
   selector: 'app-menu',
@@ -10,10 +11,11 @@ import { ComunicacionService } from 'src/app/shared/services/ComunicacionService
 export class AppMenuComponent implements OnInit{
   MenuSeleccionado: string = "";
   EsMobile: boolean = false;
-
+  UrlConsultaWhatsaap: string = '';
   
   constructor(
-    private servicioComunicacion: ComunicacionService
+    private servicioComunicacion: ComunicacionService,
+    private configService: ConfigService
   ) {  
     this.SetTypeOfDevice();    
   }
@@ -26,6 +28,8 @@ export class AppMenuComponent implements OnInit{
         this.MenuSeleccionado = "Otro";        
       }            
     });
+    this.UrlConsultaWhatsaap = this.configService.readConfig().UrlConsultaWhatsaap;
+
   }
 
   SeleccionarMenu(SubMenu: string): void {

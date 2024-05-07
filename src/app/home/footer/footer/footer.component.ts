@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ComunicacionService } from 'src/app/shared/services/ComunicacionService';
+import { ConfigService } from '../../../../app/shared/services/config.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,14 +9,16 @@ import { ComunicacionService } from 'src/app/shared/services/ComunicacionService
 })
 export class FooterComponent  implements OnInit{
   MenuSeleccionado: string = "";
+  UrlConsultaWhatsaap: string = '';
 
   constructor(
-    private servicioComunicacion: ComunicacionService
+    private servicioComunicacion: ComunicacionService,
+    private configService: ConfigService
   ) {      
   }
   
   ngOnInit(): void {
-   
+   this.UrlConsultaWhatsaap = this.configService.readConfig().UrlConsultaWhatsaap;
   }  
   
   SeleccionarMenu(SubMenu: string): void {
