@@ -24,6 +24,7 @@
       public texto2: string,
       public texto3: string,
       public texto4: string,
+      public texto5: string,
     ) {}
   }
   

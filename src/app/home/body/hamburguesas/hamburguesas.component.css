@@ -1,0 +1,19 @@
+.texto-latente {
+    animation: scaleUpDown 2.5s infinite;
+    font-size: 18px;
+    font-weight:900;
+    color: #d23438;  
+    vertical-align: middle;
+    margin-top: 15px;
+}
+
+@keyframes scaleUpDown {
+    0%, 100% {
+        transform: scale(1); /* Tamaño inicial */
+    }
+    50% {
+        transform: scale(1.2); /* Tamaño agrandado */        
+        color: #d23438;        
+        font-weight:1200;
+    }
+}

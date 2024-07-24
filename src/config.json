@@ -1,10 +1,10 @@
 {
   "captcha": false,
   "API_URL_i": "https://localhost:444/api/",
-  "API_URL_prod": "https://chingofiesta.com/chingo/api/",
+  "API_URL_p": "https://chingofiesta.com/chingo/api/",
   "API_URL": "https://localhost:44365/api/",
   "Moneda":"ARS",
   "sinDecimales":["ARS"],
   "Actualizando": true,
-  "UrlConsultaWhatsaap": "https://api.whatsapp.com/send?phone=5491162040532&text=Hola%20Quiero%20hacer%20una%20consulta"
+  "UrlConsultaWhatsaap": "https://api.whatsapp.com/send?phone=5491121556780&text=Hola%20Quiero%20hacer%20una%20consulta"
 }

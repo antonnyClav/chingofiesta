@@ -36,10 +36,10 @@ export class HamburguesasComponent {
     /*.pipe(
       map( response => response )
     )*/
-    .subscribe( data => { 
-      //console.log(data);
+    .subscribe( data => {       
       this.hamburguesas_Caseras = data.filter(x => x.imagen == './assets/swift_casera.png');         
       this.hamburguesas_NoCaseras = data.filter(x => x.imagen != './assets/swift_casera.png');         
+      //console.log(this.hamburguesas_NoCaseras);
     });
   }
 }
