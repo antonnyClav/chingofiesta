@@ -333,7 +333,7 @@
    position: -webkit-sticky;
    position: sticky;
    top: 0;
-   height: 200px;
+   height: 240px;
    z-index: 1000;
  }
  .header2 .ordenHeader2 {
@@ -703,7 +703,7 @@
    margin-right: auto;
  }
  .productos .producto .consulta {
-   background-color: rgb(20, 130, 42);
+   /*background-color: rgb(20, 130, 42);*/
    border-radius: 20px;
    max-width: 170px;
    text-align: center;
@@ -721,7 +721,7 @@
    color: white;
  }
  .productos .producto .consulta:hover {
-   background-color: rgb(9, 161, 39);
+   /*background-color: rgb(9, 161, 39);*/
  }
  .productos .producto .imagen img {
    width: 100%;

@@ -12,7 +12,8 @@ export class AppMenuComponent implements OnInit{
   MenuSeleccionado: string = "";
   EsMobile: boolean = false;
   UrlConsultaWhatsaap: string = '';
-  
+  busqueda: string = '';
+
   constructor(
     private servicioComunicacion: ComunicacionService,
     private configService: ConfigService
@@ -26,6 +27,11 @@ export class AppMenuComponent implements OnInit{
       if(cambio){        
         console.log("Menu notificado!!! ");
         this.MenuSeleccionado = "Otro";        
+      }            
+    });
+    this.servicioComunicacion.buscandoObservable.subscribe(busqueda => {
+      if(busqueda==""){        
+        this.busqueda = "";
       }            
     });
     this.UrlConsultaWhatsaap = this.configService.readConfig().UrlConsultaWhatsaap;
@@ -127,4 +133,19 @@ export class AppMenuComponent implements OnInit{
   //     });
   //   }
   // }
+
+  onSearch(event: Event) {
+    const value = (event.target as HTMLInputElement).value;
+    //console.log(value); // Muestra el valor en la consola
+    this.servicioComunicacion.buscando(value);
+  }
+
+  onSearchMobile(event: Event) {
+    const value = (event.target as HTMLInputElement).value;
+    //console.log(value); // Muestra el valor en la consola
+    this.servicioComunicacion.buscando(value);
+
+    const input = event.target as HTMLInputElement;
+    input.blur(); // Oculta el teclado forzando la pérdida de foco  
+  }
 }

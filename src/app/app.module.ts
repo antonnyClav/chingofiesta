@@ -12,6 +12,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ConfigService } from '../app/shared/services/config.service';
 import { ModalComponent } from './home/modal/modal.component';
+import { FormsModule } from '@angular/forms';
 
 function appInitializerFn(configService: ConfigService) {
   return () => {
@@ -33,7 +34,8 @@ function appInitializerFn(configService: ConfigService) {
     CommonModule,
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy }, 

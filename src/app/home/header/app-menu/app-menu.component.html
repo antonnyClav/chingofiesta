@@ -15,13 +15,29 @@
  </div>
  
  <div class="header2">
-    <div class="contenedor">
+    <div class="contenedor">      
        <div class="ordenHeader2">
           <!-- <div class="logo aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300"><a href="/index.html"><img data-aos="zoom-in" data-aos-delay="300" src="./assets/images/logo.png" alt=""></a></div> -->
-          <div class="logo"><a href="#" [routerLink]="['/home/default']" (click)="SeleccionarMenu('default')"><img data-aos="zoom-in" data-aos-delay="300" src="./assets/images/logo.png" alt=""></a></div>
+          <div class="logo">
+            <a href="#" [routerLink]="['/home/default']" (click)="SeleccionarMenu('default')"><img data-aos="zoom-in" data-aos-delay="300" src="./assets/images/logo.png" alt=""></a>
+          </div>
              
-             <!-- <div class="copete2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="700"> -->
-             <div class="copete2 aos-init aos-animate">
+          <div class="copete2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="700">
+            <div class="box">
+               <div class="container-1">
+                   <span class="icon"><i class="fa fa-search"></i></span>
+                   
+                   <div class="desktop-only">                     
+                     <input type="search" id="search" placeholder="Buscar..." [(ngModel)]="busqueda" (input)="onSearch($event)"/>
+                  </div>
+                  <div class="mobile-only">
+                     <input type="search" id="search" placeholder="Buscar..." [(ngModel)]="busqueda" (keydown.enter)="onSearchMobile($event)"/>
+                  </div>
+               </div>
+             </div>
+          </div>
+
+          <div class="copete2 aos-init aos-animate">
              <aside class="redes">
                 <div class="red"><a href="{{ UrlConsultaWhatsaap }}" target="_blank" title="Envianos whatsapps..."><i class="fab fa-whatsapp"></i></a></div>
                 <div class="red"><a href="mailto:anto_clav@hotmail.com" title="Envianos un e-mail..."><i class="far fa-envelope"></i> </a></div>

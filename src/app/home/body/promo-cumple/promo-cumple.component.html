@@ -7,6 +7,12 @@
     </div>    
 </div> -->
 
+<div *ngIf="promosCumple.length == 0" class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div class="producto">
+        <p>NO SE ENCONTRARON RESULTADOS!!!</p>        
+    </div>    
+ </div>
+
 <div class="productos" data-aos="zoom-in" data-aos-delay="300">
     <div *ngFor="let promo of promosCumple; let i = index" class="producto">
        <div class="imagen-promo"><img [src]="promo.imagen" alt=""></div>
@@ -19,7 +25,7 @@
            <div class="marca-promo"><img [src]="promo.marca"></div>
            <div class="marca-promo"><img [src]="promo.marca1"></div>
        </div>       
-       <div class="consulta "> <a href="{{promo.consulta}}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{promo.consulta}}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ promo.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">

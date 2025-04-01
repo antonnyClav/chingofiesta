@@ -1,3 +1,11 @@
+<div *ngIf="medallones_promo_1_2_3.length == 0 && medallones_promo_14_15_16.length == 0 && medallonesMaxi_41_42_43.length == 0 &&
+medallonesMaxi_50_51_52.length == 0 && medallonesMaxi_11_12_13.length == 0 && medallonesMaxi_31_32_33.length == 0 && medallonesMaxi_23_24_25.length == 0
+" class="productos" data-aos="zoom-in" data-aos-delay="300">
+   <div class="producto">
+       <p>NO SE ENCONTRARON RESULTADOS!!!</p>        
+   </div>    
+</div>
+
 <div class="productos" data-aos="zoom-in" data-aos-delay="300">
     <div *ngFor="let medallon of medallones_promo_1_2_3" class="producto">
        <div class="imagen"><img [src]="medallon.imagen" alt=""></div>
@@ -6,7 +14,7 @@
        <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marca"><img [src]="medallon.marca"></div>
-       <div class="consulta "> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ medallon.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">
@@ -31,7 +39,7 @@
        <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marca"><img [src]="medallon.marca"></div>       
-       <div class="consulta "> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ medallon.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">
@@ -59,7 +67,7 @@
            <div class="marca"><img [src]="medallon.marca"></div>
            <div class="marca"><img [src]="medallon.marca1"></div>
        </div>       
-       <div class="consulta "> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ medallon.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">
@@ -79,10 +87,14 @@
     </div>
  </div>
  
- <div class="desktop-only">
+ <div class="desktop-only" *ngIf="medallonesMaxi_41_42_43.length > 0 ||
+ medallonesMaxi_50_51_52.length > 0 || medallonesMaxi_11_12_13.length > 0 || medallonesMaxi_23_24_25.length > 0
+ ">
     <div class="sub-titulo-hamburguesas">MAXI Hamburguesas</div>
  </div>
- <div class="mobile-only">
+ <div class="mobile-only" *ngIf="medallonesMaxi_41_42_43.length > 0 ||
+    medallonesMaxi_50_51_52.length > 0 || medallonesMaxi_11_12_13.length > 0 || medallonesMaxi_23_24_25.length > 0
+    ">
     <div class="sub-titulo-hamburguesas-mobile">MAXI Hamburguesas</div>
  </div>
  
@@ -95,7 +107,7 @@
        <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marca"><img [src]="medallon.marca"></div>       
-       <div class="consulta "> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ medallon.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">
@@ -123,7 +135,7 @@
        <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marca"><img [src]="medallon.marca"></div>       
-       <div class="consulta "> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ medallon.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">
@@ -151,7 +163,7 @@
        <div *ngIf="medallon.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div *ngIf="medallon.precio" class="valor ">{{ medallon.precio }} </div> -->
        <div class="marca"><img [src]="medallon.marca"></div>
-       <div class="consulta "> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ medallon.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">
@@ -182,7 +194,7 @@
           <div class="marca"><img [src]="medallon.marca"></div>
           <div class="marca"><img [src]="medallon.marca1"></div>
        </div>       
-       <div class="consulta "> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ medallon.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ medallon.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">
@@ -201,3 +213,4 @@
         </ng-container> -->
     </div>
  </div>
+

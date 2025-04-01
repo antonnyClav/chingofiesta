@@ -1,3 +1,9 @@
+<div *ngIf="ofertas.length == 0" class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div class="producto">
+        <p>NO SE ENCONTRARON RESULTADOS!!!</p>        
+    </div>    
+</div>
+
 <div class="productos" data-aos="zoom-in" data-aos-delay="300">
     <div *ngFor="let oferta of ofertas" class="producto">
        <div class="imagen"><img [src]="oferta.imagen" alt=""></div>
@@ -6,7 +12,7 @@
        <div *ngIf="oferta.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div class="valor ">{{ oferta.precio}} </div> -->
        <div class="marca"><img [src]="oferta.marca"></div>
-       <div class="consulta "> <a href="{{ oferta.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ oferta.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ oferta.nombre }}</div>
        <div class="texto ">
             <span class="descripcion-promo">
@@ -30,3 +36,4 @@
         </div>
     </div>
 </div>
+

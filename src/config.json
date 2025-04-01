@@ -6,5 +6,6 @@
   "Moneda":"ARS",
   "sinDecimales":["ARS"],
   "Actualizando": true,
-  "UrlConsultaWhatsaap": "https://api.whatsapp.com/send?phone=5491121556780&text=Hola%20Quiero%20hacer%20una%20consulta"
+  "UrlConsultaWhatsaap": "https://api.whatsapp.com/send?phone=5491121556780&text=Hola%20Quiero%20hacer%20una%20consulta",
+  "build":"ng build  --base-href"
 }

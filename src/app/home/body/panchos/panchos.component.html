@@ -1,3 +1,9 @@
+<div *ngIf="panchos_promo_5_6_eco.length == 0 && panchos_promo_5_6.length == 0 && panchos_ug.length == 0 && panchos_swift.length == 0" class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div class="producto">
+        <p>NO SE ENCONTRARON RESULTADOS!!!</p>        
+    </div>    
+ </div>
+
 <div class="productos" data-aos="zoom-in" data-aos-delay="300">
     <div *ngFor="let pancho of panchos_promo_5_6_eco" class="producto">
        <div class="imagen"><img [src]="pancho.imagen" alt=""></div>
@@ -6,7 +12,7 @@
        <div *ngIf="pancho.precio=='0'" class="valor-sin-precio">Consultar $</div> 
        <!-- <div *ngIf="pancho.precio" class="valor ">{{ pancho.precio }} </div> -->
        <div class="marca"><img [src]="pancho.marca"></div>       
-       <div class="consulta "> <a href="{{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ pancho.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">
@@ -22,6 +28,7 @@
        <div class="nombre-detalle">{{ pancho.texto4 }}</div>
     </div>
  </div>
+
  <div class="productos" data-aos="zoom-in" data-aos-delay="300">
     <div *ngFor="let pancho of panchos_promo_5_6" class="producto">
        <div class="imagen"><img [src]="pancho.imagen" alt=""></div>
@@ -30,7 +37,7 @@
        <div *ngIf="pancho.precio=='0'" class="valor-sin-precio">Consultar $</div> 
        <!-- <div *ngIf="pancho.precio" class="valor ">{{ pancho.precio }} </div> -->
        <div class="marca"><img [src]="pancho.marca"></div>
-       <div class="consulta "> <a href="{{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ pancho.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">
@@ -46,6 +53,7 @@
        <div class="nombre-detalle">{{ pancho.texto4 }}</div>
     </div>
  </div>
+
  <div class="productos" data-aos="zoom-in" data-aos-delay="300">
     <div *ngFor="let pancho of panchos_ug" class="producto">
        <div class="imagen"><img [src]="pancho.imagen" alt=""></div>
@@ -57,7 +65,7 @@
           <div class="marca"><img [src]="pancho.marca"></div>
           <div class="marca"><img [src]="pancho.marca1"></div>
        </div>
-       <div class="consulta "> <a href="{{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ pancho.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">
@@ -73,6 +81,7 @@
        <div class="nombre-detalle">{{ pancho.texto4 }}</div>
     </div>
  </div>
+ 
  <div class="productos" data-aos="zoom-in" data-aos-delay="300">
     <div *ngFor="let pancho of panchos_swift" class="producto">
        <div class="imagen"><img [src]="pancho.imagen" alt=""></div>
@@ -84,7 +93,7 @@
          <div class="marca"><img [src]="pancho.marca"></div>
          <div class="marca"><img [src]="pancho.marca1"></div>
        </div>
-       <div class="consulta "> <a href="{{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ pancho.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ pancho.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">

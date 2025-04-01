@@ -7,6 +7,13 @@
     </div>    
 </div> -->
 
+<div *ngIf="snacks.length == 0 && snacks_combos.length == 0" class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div class="producto">
+        <p>NO SE ENCONTRARON RESULTADOS!!!</p>        
+    </div>    
+ </div>
+
+
 <div class="productos" data-aos="zoom-in" data-aos-delay="300">
     <div *ngFor="let snack of snacks" class="producto">
        <div class="imagen"><img [src]="snack.imagen" alt=""></div>
@@ -15,7 +22,7 @@
        <div *ngIf="snack.precio=='0'" class="valor-sin-precio">Consultar $</div> 
        <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
        <div class="marca"><img [src]="snack.marca"></div>       
-       <div class="consulta "> <a href="{{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ snack.nombre }}</div>
        <div class="texto ">
          <span class="descripcion-promo">
@@ -36,7 +43,7 @@
        <div *ngIf="snack.precio=='0'" class="valor-sin-precio">Consultar $</div> 
        <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
        <div class="marca"><img [src]="snack.marca"></div>       
-       <div class="consulta-snacks"> <a href="{{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta-snacks" [ngStyle]="{'background-color': color}"> <a href="{{ snack.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre-snacks">{{ snack.nombre }}</div>
        <div class="texto ">
          <span class="descripcion-promo">

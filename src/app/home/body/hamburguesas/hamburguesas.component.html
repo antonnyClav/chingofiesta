@@ -1,3 +1,9 @@
+<div *ngIf="hamburguesas.length == 0 && hamburguesas_Caseras.length == 0 && hamburguesas_NoCaseras.length == 0" class="productos" data-aos="zoom-in" data-aos-delay="300">
+    <div class="producto">
+        <p>NO SE ENCONTRARON RESULTADOS!!!</p>        
+    </div>    
+ </div>
+ 
 <div class="productos" data-aos="zoom-in" data-aos-delay="300">
     <div *ngFor="let hamburguesa of hamburguesas" class="producto">
        <div class="imagen"><img [src]="hamburguesa.imagen" alt=""></div>
@@ -6,7 +12,7 @@
        <div *ngIf="hamburguesa.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->       
        <div class="marca"><img [src]="hamburguesa.marca"></div>       
-       <div class="consulta "> <a href="{{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ hamburguesa.nombre }}</div>
        <div class="texto ">
           <span class="descripcion-promo">
@@ -23,10 +29,10 @@
     </div>
  </div>
  
- <div class="desktop-only">
+ <div class="desktop-only" *ngIf="hamburguesas_Caseras.length > 0 || hamburguesas_NoCaseras.length > 0">
     <div class="sub-titulo-hamburguesas">Hamburguesas PREMIUM 125 grs</div>
  </div>
- <div class="mobile-only">
+ <div class="mobile-only" *ngIf="hamburguesas_Caseras.length > 0 || hamburguesas_NoCaseras.length > 0">
     <div class="sub-titulo-hamburguesas-mobile">Hamburguesas PREMIUM 125 grs</div>
  </div>
  
@@ -38,7 +44,7 @@
       <div *ngIf="hamburguesa.precio=='0'" class="valor-sin-precio">Consultar $</div>
       <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
       <div class="marca"><img [src]="hamburguesa.marca"></div>      
-      <div class="consulta "> <a href="{{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+      <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
       <div class="nombre">{{ hamburguesa.nombre }}</div>
       <div class="texto ">
          <span class="descripcion-promo">
@@ -63,7 +69,7 @@
        <div *ngIf="hamburguesa.precio=='0'" class="valor-sin-precio">Consultar $</div>
        <!-- <div class="valor ">{{ hamburguesa.precio }} </div> -->
        <div class="marca"><img [src]="hamburguesa.marca"></div>       
-       <div class="consulta "> <a href="{{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
+       <div class="consulta " [ngStyle]="{'background-color': color}"> <a href="{{ hamburguesa.consulta }}" target="_blank"><i class="fab fa-whatsapp"></i> Consultar!</a></div>
        <div class="nombre">{{ hamburguesa.nombre }}</div>
        <div class="texto ">
          <span class="descripcion-promo">
@@ -80,3 +86,5 @@
        <div *ngIf="hamburguesa.texto5 !=''" class="texto-latente">{{ hamburguesa.texto5 }}</div>
     </div>
  </div>
+
+
