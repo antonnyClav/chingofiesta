@@ -27,7 +27,7 @@ export class PromoCumpleComponent implements OnInit, OnDestroy{
     });
     this.intervalId = setInterval(() => {
       this.color = this.color === 'rgb(20, 130, 42)' ? 'rgb(9, 161, 39)' : 'rgb(20, 130, 42)';
-    }, 500); // Cambia cada 1 segundo (1000ms)
+    }, 500); // Cambia cada x segundo (500ms)
   }
   
   ngOnDestroy() {

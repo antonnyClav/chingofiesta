@@ -22,9 +22,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
     //console.log(url[url.length-1]);
   }
   ngAfterViewInit(): void {
-    setTimeout(()=>{ 
+    //promocion cuenta dni u otra
+    /*setTimeout(()=>{ 
       this.openModal();
-    }, 1000)    
+    }, 1000)*/    
   }
 
   ngOnInit() {    

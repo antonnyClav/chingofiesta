@@ -29,7 +29,7 @@ export class SnacksComponent implements OnInit, OnDestroy{
     });
     this.intervalId = setInterval(() => {
       this.color = this.color === 'rgb(20, 130, 42)' ? 'rgb(9, 161, 39)' : 'rgb(20, 130, 42)';
-    }, 500); // Cambia cada 1 segundo (1000ms)
+    }, 500); // Cambia cada x segundo (500ms)
   }
 
   ngOnDestroy() {
@@ -44,7 +44,7 @@ export class SnacksComponent implements OnInit, OnDestroy{
       map( response => response )
     )*/
     .subscribe( data => { 
-      //console.log(data);
+      console.log(data);
       this.dataTMP = data;
       this.snacks = data.filter(x=> x.nombre!='Combo Snacks');         
       this.snacks_combos = data.filter(x=> x.nombre=='Combo Snacks'); 
